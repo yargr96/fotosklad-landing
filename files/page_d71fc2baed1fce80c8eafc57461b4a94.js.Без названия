@@ -1,0 +1,30 @@
+
+; /* Start:"a:4:{s:4:"full";s:81:"/bitrix/components/custom/expert.main/templates/main_page/script.js?1458221485645";s:6:"source";s:67:"/bitrix/components/custom/expert.main/templates/main_page/script.js";s:3:"min";s:0:"";s:3:"map";s:0:"";}"*/
+$(document).ready(function(){
+	$(".expert-inline-block.inline").each(function(){
+		var _this = $(this);
+		var arObj = ["title", "preview", "text"];
+		$.each(arObj, function(idx, val){
+			var sObj = "."+val;
+			var obj = _this.find(".expert-inline-item "+sObj);
+			if(obj.length > 0) {
+				var _mx = 0;
+				obj.each(function () {
+					var h = $(this).height();
+					if (_mx < h)
+						_mx = h;
+					if($(this).next().hasClass("date"))
+						$(this).addClass("indent");
+				});
+				if(obj.filter(":first").hasClass("indent")) {
+					obj.height(_mx + 23); // .date (height + padding)
+				}
+				else {
+					obj.height(_mx);
+				}
+			}
+		});
+	});
+});
+/* End */
+;; /* /bitrix/components/custom/expert.main/templates/main_page/script.js?1458221485645*/

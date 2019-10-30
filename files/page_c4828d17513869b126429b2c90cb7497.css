@@ -1,0 +1,623 @@
+
+
+/* Start:/bitrix/templates/fotosklad/components/bitrix/system.pagenavigation/visual2/style.css?14582214854579*/
+.bx_pagination_bottom *{vertical-align: baseline;}
+.bx_pagination_bottom{
+	color: #8d8d8d;
+    padding: 0 26px;
+	text-align: center;
+}
+
+.bx_pagination_bottom .bx_pagination_section_one{ }
+.bx_pagination_bottom .bx_pagination_section_two{
+	float: right;
+	text-align: right;
+}
+.bx_pagination_bottom .bx_pg_section{
+    color: #AFAFAF;
+	display: inline-block;
+    font: 12px Arial;
+	height: 30px;
+	vertical-align: top;
+	line-height: 30px;
+}
+
+.bx_pagination_bottom .bx_pagination_select_container{display: inline-block;}
+.bx_pagination_bottom .bx_pagination_select_container select{
+	position: relative;
+	margin: 2px 20px 2px 10px;
+	padding: 1px 25px 3px 5px;
+	height: 22px;
+	outline: none;
+	border: 1px solid #e0e0e0;
+	border-radius: 1px;
+	background: #fff url(/bitrix/templates/fotosklad/components/bitrix/system.pagenavigation/visual2/images/select_arrow.png) no-repeat right center;
+	color: #8d8d8d;
+	font-size: 11px;
+	line-height: 16px;
+	resize: none;
+	-webkit-appearance: none;
+}
+@-moz-document url-prefix(){
+	.bx_pagination_bottom .bx_pagination_select_container select{
+		background: #fff !important;
+		padding-right: 5px;
+	}
+}
+
+
+.bx_pagination_bottom .bx_pagination_page{
+	white-space: nowrap;
+	font-size: 18px;
+}
+.bx_pagination_bottom .bx_pagination_page ul{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.bx_pagination_bottom .bx_pagination_page li{
+	display: inline-block;
+    margin-right: 5px;
+	min-width: 22px;
+	color: #8d8d8d;
+	text-align: center;
+	line-height: 22px;
+}
+.bx_pagination_bottom .bx_pagination_page li a{
+    color: #222;
+	display: block;
+	min-width: 22px;
+	/*color: #8d8d8d;*/
+	text-align: center;
+	text-decoration: none;
+	line-height: 22px;
+}
+.bx_pagination_bottom .bx_pagination_page li a.no-underline{
+    position: relative;
+    text-decoration:none;
+}
+.bx_pagination_bottom .bx_pagination_page li a.no-underline span{
+	font-size: 16px;
+    position: relative;
+    top: -2px;
+}
+.bx_pagination_bottom .bx_pagination_page li a:hover{
+    background: #FE9900;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+}
+.bx_pagination_bottom .bx_pagination_page li.bx_active{
+    color: #fff;
+	border-radius: 3px;
+	/*background: #dbecf4;*/
+    background: #FE9900;
+	/*box-shadow: inset 0 2px 2px 0 rgba(0,0,0,.1);*/
+}
+
+.bx_pagination_bottom .bx_pg_section.bx_pg_pagination_num{display: block;}
+.bx_pagination_bottom .bx_pg_section.bx_pg_show_col select{margin-right: 5px;}
+
+
+.bx_pagination_bottom .bx_wsnw{
+    font-size:12px;
+    white-space: nowrap;
+}
+.bx_pagination_bottom .bx_wsnw .custom_pg_of{
+    color:#222;
+    font-weight:700;
+}
+
+
+
+/*1*/
+@media (min-width:981px){
+
+}
+/*2*/
+@media (min-width:640px) and (max-width:980px){
+
+}
+/*3*/
+@media (min-width:480px) and (max-width:639px) {
+	.bx_pagination_bottom .bx_pagination_select_container select{margin-right: 10px;}
+}
+/*4*/
+@media (max-width:479px) {
+	.bx_pagination_bottom .bx_pagination_section_one{ }
+	.bx_pagination_bottom .bx_pagination_section_two{
+		float: none;
+		text-align: left;
+	}
+	.bx_pagination_bottom .bx_pagination_select_container{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 47%;
+	}
+	.bx_pagination_bottom .bx_pagination_select_container select{
+		display: block;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		margin-right: 0 !important;
+		width: 90%;
+	}
+	.bx_pagination_bottom .bx_pg_section{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 100%;
+		text-align: left;
+	}
+	.bx_pagination_bottom .bx_pagination_page{white-space: normal;}
+	.bx_pagination_bottom .bx_pg_section.bx_pg_pagination_num{width: 100%;height: auto;text-align: center;}
+	.bx_pagination_bottom .bx_pg_section.bx_pg_show_col{display: none;}
+	.bx_pagination_bottom .bx_pg_text{
+		display: inline-block;
+		width: 50%;
+	}
+	.bx_pagination_bottom .bx_pg_section.pg_pagination_num .bx_pg_text{display: none;}
+}
+/*5*/
+@media (max-width:320px){
+}
+
+.bx_pagination_bottom .bx_pagination_section_one,
+.bx_pagination_bottom .bx_pagination_section_two,
+.bx_pagination_bottom .bx_pagination_select_container,
+.bx_pagination_bottom .bx_pagination_select_container select,
+.bx_pagination_bottom .bx_pg_section,
+.bx_pagination_bottom .bx_pagination_page,
+.bx_pagination_bottom .bx_pg_section.bx_pg_pagination_num,
+.bx_pagination_bottom .bx_pg_section.bx_pg_show_col,
+.bx_pagination_bottom .bx_pg_text,
+.bx_pagination_bottom .bx_pg_section.pg_pagination_num .bx_pg_text{
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* End */
+
+
+/* Start:/bitrix/templates/fotosklad/components/web-sys/iblock.items/main_page/style.css?14703068144295*/
+#content .main_content .blocks_main_2
+{
+	height: auto;
+	margin: 30px 13px;
+}
+
+.main_content .actions-dynamic-title
+{
+	background: transparent;
+	padding: 0;
+	position: relative;
+	text-align: center;
+	top: 10px;
+	width: 100%;
+}
+
+.main_content .blocks_main_2 .actions-dynamic-title h2
+{
+	background: #FFF;
+	color: #FE9900;
+	display: inline-block;
+	min-height: 21px;
+	padding: 0 8px;
+	text-transform: uppercase;
+	width: auto;
+}
+
+.actions-dynamic
+{
+	border: 1px solid #FE9900;
+	border-radius: 10px;
+	height: 155px;
+	overflow: hidden;
+	padding: 10px;
+	white-space: nowrap;
+}
+
+
+/* SPECIAL ACTION ITEM */
+.trans-left-include
+{
+	transition: left .8s ease-in-out;
+}
+.trans-left-top-include
+{
+	transition: left .5s ease-in-out .25s, top .5s ease-in-out .25s;
+}
+.trans-left-width-include
+{
+	transition: left .6s ease-in-out, width .6s ease-in-out;
+}
+.trans-opacity-include
+{
+	transition: opacity .5s ease-in-out;
+}
+.trans-width-include
+{
+	transition: width .8s ease-in-out;
+}
+
+
+.actions-dynamic-item
+{
+	border: 1px solid #CCC;
+	border-radius: 8px;
+	cursor: pointer;
+	display: inline-block;
+	height: 155px;
+	margin-left: 8px;
+	overflow: hidden;
+	position: relative;
+	width: calc(20% - 8px); /* 8px - left margin of first element */
+}
+.actions-dynamic-item:first-child
+{
+	margin-left: 0;
+}
+
+.actions-dynamic-item.minimum
+{
+	/*width: 155px;*/
+	width: calc(18% - 8px);
+}
+
+.actions-dynamic-item.maximum
+{
+	/*width: 255px;*/
+	width: calc(28% - 8px);
+}
+
+/* IMAGE */
+.actions-dynamic-item .image-wrapper
+{
+	overflow: hidden;
+	width: 100%;
+}
+
+.actions-dynamic-item .image-wrapper img
+{
+	left: -36.9px;
+	position: relative;
+	/*z-index: -1;*/
+}
+.actions-dynamic-item.minimum .image-wrapper img
+{
+	left: -43.953px;
+}
+.actions-dynamic-item.maximum .image-wrapper img
+{
+	left: 0;
+}
+
+/* TEXT */
+.actions-dynamic-item .hover-block
+{
+	color: #FFF;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	white-space: normal;
+	width: 0;
+}
+.actions-dynamic-item.maximum .hover-block
+{
+	width: 256.875px;
+}
+
+.actions-dynamic-item .hover-block .title
+{
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+.actions-dynamic-item .hover-block .preview
+{
+	font-size: 11px;
+}
+
+/* wrapper */
+.actions-dynamic-item .hover-block .hover-wrapper
+{
+	height: calc(100% - 30px);
+	left: -36.9px;
+	opacity: 0;
+	padding: 15px;
+	position: relative;
+	z-index: 1;
+}
+.actions-dynamic-item.maximum .hover-block .hover-wrapper
+{
+	left: 0;
+	opacity: 1;
+}
+.actions-dynamic-item.minimum .hover-block .hover-wrapper
+{
+	left: -43.953px;
+}
+
+/* opacity layers */
+.actions-dynamic-item .hover-block .hover-layer
+{
+	background: #000;
+	border-radius: 8px;
+	/*height: 0;*/
+	height: 100%;
+	left: 35%;
+	opacity: .5;
+	position: absolute;
+	/*top: 35%;*/
+	width: 0;
+	z-index: 1;
+}
+.actions-dynamic-item.maximum .hover-block .hover-layer
+{
+	left: 0;
+	/*height: 100%;*/
+	/*top: 0;*/
+	width: 100%;
+}
+
+.actions-dynamic-item .hover-block .hover-overlap
+{
+	background: #000;
+	border-radius: 0 0 8px 8px;
+	height: 100%;
+	left: 7%;
+	opacity: .35;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	z-index: 1;
+}
+
+.main_content .blocks_main_2 .expert-inline-wrapper
+{
+	clear: both;
+	margin-top: 30px;
+}
+
+.expert-inline-block
+{
+	height: auto;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.expert-inline-block a
+{
+	color: #000;
+	text-decoration: none;
+}
+
+.expert-inline-block .expert-inline-item
+{
+	border: 1px solid #CCC;
+	display: inline-block;
+	height: 100%;
+	overflow: hidden;
+	vertical-align: top;
+}
+.expert-inline-block.inline .expert-inline-item
+{
+	margin-left: 20px;
+	width: calc(25% - 17px);
+}
+.expert-inline-block.inline .expert-inline-item:first-child
+{
+	margin-left: 0;
+}
+
+.expert-inline-block .expert-inline-item .image
+{
+	height: 162px;
+}
+
+.expert-inline-block .expert-inline-item .image-wrapper
+{
+	height: 100%;
+	left: -41.5px;
+	position: relative;
+	text-align: center;
+	width: 324px;
+}
+
+.expert-inline-block .expert-inline-item .text
+{
+	overflow: hidden;
+	position: relative;
+	margin: 10px 15px;
+	width: calc(100% - 30px);
+}
+
+.expert-inline-block .expert-inline-item .title
+{
+	font-size: 14px;
+	overflow: hidden;
+}
+
+.expert-inline-block .expert-inline-item .preview
+{
+	font-size: 11px;
+	margin-top: 8px;
+}
+
+.expert-inline-block .expert-inline-item .date
+{
+	background: #FFF;
+	bottom: 0;
+	color: #CCC;
+	left: 0;
+	padding-top: 10px;
+	position: absolute;
+	width: 100%;
+}
+/* End */
+
+
+/* Start:/bitrix/components/custom/expert.main/templates/main_page/style.css?14642724572609*/
+#content .main_content .blocks_main_2
+{
+	height: auto;
+	margin: 30px 13px;
+}
+
+.main_content .blocks_main_2 .expert-inline-wrapper
+{
+	clear: both;
+	margin-top: 30px;
+}
+
+.expert-inline-block
+{
+	height: auto;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.expert-inline-block.solid
+{
+	border-left: 1px solid #CCC;
+}
+
+.expert-inline-block a
+{
+	color: #000;
+	text-decoration: none;
+}
+
+.expert-inline-block .expert-inline-item
+{
+	border: 1px solid #CCC;
+	display: inline-block;
+	height: 100%;
+	overflow: hidden;
+	vertical-align: top;
+}
+.expert-inline-block.solid .expert-inline-item
+{
+	border-left: none;
+	width: calc(25% - 2px);
+}
+.expert-inline-block.inline .expert-inline-item
+{
+	margin-left: 20px;
+	width: calc(25% - 18px);
+}
+.expert-inline-block.inline .expert-inline-item:first-child
+{
+	margin-left: 0;
+}
+
+.expert-inline-block .expert-inline-item .image
+{
+	height: 162px;
+	position: relative;
+	text-align: center;
+}
+/*
+.expert-inline-block .expert-inline-item .image-wrapper
+{
+	height: 100%;
+	left: -49.5px;
+	position: relative;
+	text-align: center;
+	width: 324px;
+}
+.expert-inline-block.solid .expert-inline-item .image-wrapper
+{
+	left: -42px;
+}
+*/
+.expert-inline-block .expert-inline-item img
+{
+	height: 100%;
+}
+
+.expert-inline-block .expert-inline-item .text
+{
+	overflow: hidden;
+	position: relative;
+	margin: 10px 15px;
+	width: calc(100% - 30px);
+}
+
+.expert-inline-block.solid .expert-inline-item .text
+{
+	height: 118px;
+}
+
+.expert-inline-block .expert-inline-item .title
+{
+	font-size: 14px;
+	overflow: hidden;
+}
+.expert-inline-block.solid .expert-inline-item .title
+{
+	height: 34px;
+}
+
+.expert-inline-block .expert-inline-item .preview
+{
+	font-size: 11px;
+	margin-top: 8px;
+}
+
+.expert-inline-block .expert-inline-item .date
+{
+	background: #FFF;
+	bottom: 0;
+	color: #CCC;
+	left: 0;
+	padding-top: 10px;
+	position: absolute;
+	width: 100%;
+}
+
+.expert-inline-block.solid
+{
+	height: 300px;
+}
+
+.expert-inline-block .expert-inline-item .overlay .video
+{
+	position: absolute;
+}
+.expert-inline-block .expert-inline-item .overlay .video.round
+{
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	background: #FFF;
+	border-radius: 50px;
+	height: 50px;
+	left: calc(50% - 25px);
+	opacity: .75;
+	top: calc(50% - 25px);
+	width: 50px;
+}
+.expert-inline-block .expert-inline-item a:hover .overlay .video.round
+{
+	box-shadow: 0 0 6px 3px rgba(0, 0, 0, .3);
+}
+.expert-inline-block .expert-inline-item .overlay .video.play
+{
+	border-bottom: 15px solid transparent;
+	border-left: 20px solid #000;
+	border-top: 15px solid transparent;
+	bottom: calc(50% - 15px);
+	height: 0;
+	opacity: .7;
+	right: calc(50% - 13px);
+	width: 0;
+}
+/* End */
+/* /bitrix/templates/fotosklad/components/bitrix/system.pagenavigation/visual2/style.css?14582214854579 */
+/* /bitrix/templates/fotosklad/components/web-sys/iblock.items/main_page/style.css?14703068144295 */
+/* /bitrix/components/custom/expert.main/templates/main_page/style.css?14642724572609 */

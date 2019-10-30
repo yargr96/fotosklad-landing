@@ -1,0 +1,432 @@
+#city-selector {
+    font-size: 11pt;
+}
+
+.b-city-tt-wr {
+    position: relative;
+}
+
+.b-tt-change-region {
+    cursor: pointer;
+    display: inline-block;
+    border-bottom: 1px dotted #777;
+    text-decoration: none;
+}
+
+.b-tt-change-region span {
+    color: #fff;
+    background: url(//img.fotosklad.ru/bitrix/templates/kario/images/pen_write.png) no-repeat;
+    padding-left: 25px;
+}
+
+.b-tt-cityname {
+    color: #FE9900;
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+.b-select-city-popup {
+    background: #fff;
+    width: 900px;
+    border-radius: 15px;
+    margin: 50px auto 50px;
+    overflow: hidden;
+}
+
+.b-city-popup-header {
+    position: relative;
+    background: #dedede;
+    height: 40px;
+    border-radius: 15px 15px 0 0;
+}
+
+.b-city-popup-close {
+    border-radius: 50%;
+    margin: 0;
+    padding: 0 0 2px 1px;
+    text-align: center;
+    background: #ccc;
+    line-height: 21px;
+    position: absolute;
+    top: 8px;
+    right: 9px;
+    color: #444;
+    font-size: 24px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.b-city-popup-close:hover {
+    color: #ccc;
+    background: #444;
+}
+
+.b-bigcities-wr {
+    height: 390px;
+    width: 200px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+}
+
+.b-bigcities-title {
+    border-bottom: 1px solid #777;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #555;
+    height: 30px;
+    font-weight: bold;
+}
+
+.b-bigcities {
+    z-index: 5;
+    display: inline-block;
+    vertical-align: top;
+    width: 190px;
+    height: 370px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.b-citylist-wr {
+    height: 390px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 660px;
+}
+
+.b-city-regions {
+    padding: 0 5px 0 10px;
+    background: #eee;
+    z-index: 5;
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+.b-citylist-wr h3 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #555;
+    height: 30px;
+}
+
+.cities-title {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 1px solid #777;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #555;
+    height: 30px;
+}
+
+.region-title {
+    width: 186px;
+    border-bottom: 1px solid #777;
+}
+
+.b-citylist-frame {
+    z-index: 5;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: 420px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.b-country-list {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    list-style: none;
+}
+
+.b-country-list li {
+    cursor: pointer;
+    color: #666;
+    border-radius: 15px 15px 0 0;
+    padding: 0 25px 6px;
+    margin-right: 0;
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.b-country-list li > span {
+    font-size: 18pt;
+    line-height: 40px;
+    border-bottom: 1px dotted #666;
+}
+
+.b-country-list li:hover {
+    color: #000;
+}
+
+.b-country-list li.active {
+    color: #000;
+    background: #fff;
+}
+
+.b-country-list li.active > span {
+    border-bottom: none;
+}
+
+.b-region-list, .b-city-list {
+    list-style: none;
+    margin-top: 5px;
+}
+
+.b-region-list li {
+    display: block;
+    margin: 0 0 10px;
+    cursor: pointer;
+}
+
+.b-region-list li > span {
+    border-bottom: 1px dotted #666;
+}
+
+.b-region-list li.active {
+    font-weight: bold;
+}
+
+.b-region-list li.active {
+    font-weight: bold;
+    color: #FE9900;
+}
+
+.b-city-list.column2 {
+    width: 190px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.b-city-list li {
+    margin: 0 0 10px;
+}
+
+.b-city-list li a {
+    text-decoration: underline;
+    color: #333;
+}
+
+.b-city-list li.active a {
+    font-weight: bold;
+    color: #FE9900;
+    font-size: 16px;
+}
+
+.b-city-popup-footer {
+    color: #555;
+    font-size: 8pt;
+    text-align: center;
+    width: 470px;
+    margin: 30px auto 0;
+    padding: 10px;
+}
+
+.city-select-btn {
+    color: #FE9900;
+    border-bottom: 1px dashed #FE9900;
+    cursor: pointer;
+}
+
+.b-city-suggest-close {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    color: #666;
+    border-bottom: 1px dotted #666;
+    font-size: 9pt;
+}
+
+.b-city-srch-wr {
+    position: relative;
+    width: 845px;
+    margin-left: 15px;
+}
+
+.b-search-suggest {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 30px;
+    padding: 10px;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #eee;
+    border: 1px solid #ccc;
+}
+
+.b-search-suggest ul {
+    list-style: none;
+}
+
+.b-search-suggest ul li {
+    line-height: 1.1em;
+    padding: 0 0 5px;
+}
+
+.b-search-suggest ul li a {
+    text-decoration: none;
+    border-bottom: 1px dotted #666;
+    color: #555;
+}
+
+#city-search-inp {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3px 8px;
+    font-size: 12pt;
+    color: #444;
+    border: 1px solid #ccc;
+}
+
+.b-search-city {
+    padding: 20px 10px 5px;
+}
+
+.b-search-city  {
+    margin: 0 0 10px 15px;
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+}
+
+.b-search-city span {
+    color: #000;
+    font-size: 21px;
+}
+
+.city-fancybox-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: none;
+    z-index: 8010;
+    background: url('//img.fotosklad.ru/bitrix/templates/fotosklad/images/fancybox_overlay.png');
+}
+
+.city-fancybox-overlay-fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.loader_field {
+    background: url(//img.fotosklad.ru/bitrix/templates/fotosklad/images/loader_field.gif);
+}
+
+.cityform_courier_tag {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 16px;
+    height: 13px;
+    margin-left: 3px;
+    background: url(//img.fotosklad.ru/bitrix/templates/fotosklad/images/cityform_courier_tag.png) no-repeat;
+}
+
+.cityform_hq_tag {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 16px;
+    height: 19px;
+    margin-left: 3px;
+    background: url(//img.fotosklad.ru/bitrix/templates/fotosklad/images/cityform_hq_tag.png) no-repeat;
+}
+
+.cityform_outpost_tag {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 19px;
+    height: 15px;
+    margin-left: 3px;
+    background: url(//img.fotosklad.ru/bitrix/templates/fotosklad/images/cityform_outpost_tag.png) no-repeat;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.arrow_box {
+    border-radius: 15px;
+    color: #444;
+    font-size: 8pt;
+    position: absolute;
+    z-index: 10000;
+    padding: 10px;
+    width: 250px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.arrow_box:after, .arrow_box:before {
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_box:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 10px;
+    left: 20%;
+    margin-left: -10px;
+}
+
+.arrow_box:before {
+    border-color: rgba(204, 204, 204, 0);
+    border-bottom-color: #ccc;
+    border-width: 11px;
+    left: 20%;
+    margin-left: -11px;
+}
+
+.arrow_box ul {
+    list-style: square outside;
+    margin-left: 40px;
+}
+
+.arrow_box div {
+    margin-bottom: 10px;
+}
+
+.arrow_box div:last-child {
+    margin-bottom: 0;
+}
+
+.b-top-city {
+    font-weight: bold;
+}
