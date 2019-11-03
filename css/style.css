@@ -36,7 +36,7 @@
     position: absolute;
     top: -25px;
     left: 27px;
-    background-image: url(../img/lines.png);
+    background-image: url(../img/lines.svg);
 }
 
 .main::after {
@@ -311,6 +311,9 @@
 
 .club-price {
     background-color: #F8F8F8;
+    background-repeat: no-repeat;
+    background-image: url(../img/lines.svg);
+    background-position: 22px bottom;
     padding-top: 73px;
     padding-bottom: 64px;
     padding: 73px 21px 64px;
@@ -318,6 +321,7 @@
 
 .club-price__main {
     display: flex;
+    margin-bottom: 64px;
 }
 
 .club-price__header {
@@ -330,6 +334,7 @@
 .club-price__info {
     flex-grow: 1;
     padding-top: 46px;
+    padding-left: 50px;
     position: relative;
 }
 
@@ -442,4 +447,70 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 157%;
+}
+
+.club-price-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    height: 176px;
+}
+
+.club-price-footer__item {
+    
+}
+
+.condition-card {
+   background-color: #FFFFFF;; 
+   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+   border-radius: 8px;
+   background-repeat: no-repeat;
+   background-position: center 0;
+   position: relative;
+   display: flex;
+   align-items: center;
+   padding-left: 96px;
+   padding-right: 10px;
+   font-size: 10px;
+   line-height: 175%;
+   color: #4F4F4F;
+}
+
+.condition-card::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgba(253, 197, 45, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    margin: auto 0;
+}
+
+.condition-card::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../img/icons/payment.svg);
+    top: 0;
+    bottom: 0;
+    left: 25px;
+    margin: auto 0;
+}
+
+.condition-card_payment::after {
+    background-image: url(../img/icons/payment.svg);
+}
+
+.condition-card_authirisation::after {
+    background-image: url(../img/icons/authorisation.svg);
+}
+
+.condition-card_conditions::after {
+    background-image: url(../img/icons/conditions.svg);
 }
