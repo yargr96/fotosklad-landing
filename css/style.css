@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap&subset=cyrillic');
 
+#content {
+    background: none;
+}
+
 .landing {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     font-weight: 300;
-    width: 990px !important;
+    max-width: 990px;
+    margin: auto;
 }
 
 .landing *,
@@ -81,8 +86,15 @@
     justify-content: space-between;
 }
 
+.price-types__standard,
+.price-types__club,
+.price-types__want-cheaper {
+    flex-grow: 1;
+}
+
 .price-types__standard {
     height: 100%;
+    margin-right: 15px;
 }
 
 .standard-prices {
@@ -135,7 +147,18 @@
     right: 0;
     top: -12px;
     margin: 0 auto;
-    background-color: #eee;
+}
+
+.price-card_standard::before {
+    background-image: url(../img/icons/standard.svg);
+}
+
+.price-card_special::before {
+    background-image: url(../img/icons/special.svg);
+}
+
+.price-card_base::before {
+    background-image: url(../img/icons/base.svg);
 }
 
 .price-card__header {
@@ -175,21 +198,31 @@
 .price-card__price {
     color: #000000;
     font-weight: 900;
+    white-space: nowrap;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.price-card__price_special {
+    color: #FDC52D;
 }
 
 .price-types__club,
 .price-types__want-cheaper {
-    padding-top: 91px;
-    padding-bottom: 61px;
+    padding: 91px 10px 61px;
+    border-radius: 8px;
 }
 
 .price-types__club {
-
+    margin-right: 9px;
+    background-color: #fff;
 }
 
 .price-types__club .price-card__footer,
 .price-types__want-cheaper .price-card__footer {
     bottom: 14px;
+    right: 10px;
+    left: 10px;
 }
 
 .price-types__club::before {
@@ -202,5 +235,211 @@
     box-shadow: 0px 6px 22px rgba(0, 0, 0, 0.12);
     border-radius: 8px;
     background-position: -38px bottom;
-    /* background-size: 272px auto; */
+}
+
+.price-types__want-cheaper {
+    background-color: #F05123;
+    background-image: url(../img/icons/want-cheaper.svg);
+    background-position: center 25px;
+    background-repeat: no-repeat;
+}
+
+.price-types__want-cheaper::before {
+    display: none;
+}
+
+.price-types__want-cheaper .price-card__header,
+.price-types__want-cheaper .price-card__description {
+    color: #fff;
+}
+
+.price-card__details {
+    display: block;
+    font-weight: bold;
+    font-size: 10px;
+    color: #000000;
+    text-decoration: none;
+    position: absolute;
+    bottom: 88px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 56px;
+}
+
+.price-card__details::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #FDC52D;
+    border-radius: 12px;
+}
+
+.price-card__details:hover,
+.price-card__details:active,
+.price-card__details:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+.price-types__want-cheaper .price-card__details {
+    color: #ffffff;
+}
+
+.price-card__question {
+    width: 14px;
+    height: 14px;
+    border-radius: 50px;
+    color: #8D8D8D;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.price-card__sale-label {
+    background-color: #70AB4A;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 2px 3px;
+    font-size: 8px;
+}
+
+.club-price {
+    background-color: #F8F8F8;
+    padding-top: 73px;
+    padding-bottom: 64px;
+    padding: 73px 21px 64px;
+}
+
+.club-price__main {
+    display: flex;
+}
+
+.club-price__header {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+
+.club-price__info {
+    flex-grow: 1;
+    padding-top: 46px;
+    position: relative;
+}
+
+.club-price__info::after {
+    content: '';
+    width: 11px;
+    height: 20px;
+    background-image: url(../img/icons/arrow.svg);
+    position: absolute;
+    right: 0;
+    top: 131px;
+}
+
+.club-price__text {
+    font-size: 16px;
+    line-height: 175%;
+    font-weight: 300;
+    margin-bottom: 61px;
+}
+
+.club-price__macbook {
+    width: 520px;
+    height: 295px;
+    background-image: url(../img/macbook.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+.club-price__macbook::before {
+    content: '';
+    position: absolute;
+    width: 103px;
+    height: 13px;
+    background-image: url(../img/price-on-screen.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    top: 157px;
+    right: 93px;
+}
+
+.club-price__macbook::after {
+    content: "";
+    position: absolute;
+    top: 163px;
+    right: 195px;
+    width: 59px;
+    height: 93px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top-left-radius: 20px;
+}
+
+.club-price__price-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 316px;
+    height: 52px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 0 15px;
+}
+
+.club-price__price-label > *:not(:last-child) {
+    margin-right: 5px;
+}
+
+.club-price__price-type {
+    font-size: 12px;
+    color: #888888;
+}
+
+.club-price__question {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999999;
+}
+
+.club-price__price {
+    font-size: 16px;
+    color: #111111;
+    font-weight: bold;
+    color: #fdc52d;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.club-price__sale-label {
+    background-color: #70AB4A;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 2px;
+    padding: 3px 7px;
+}
+
+.club-price__conditions {
+    color: #040404;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 157%;
 }
