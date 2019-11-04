@@ -1,0 +1,16 @@
+
+
+/* Start:/bitrix/templates/fs_mobile/components/yeti/product.list/slider/style.css?14368691321321*/
+.fs-slider-products{position:relative;border-bottom: 1px solid #ddd;}
+.fs-slider-products .item{width:255px;margin:0 auto;font-size:0;padding:20px;}
+.fs-slider-products .item .item-photo{display:inline-block;vertical-align:top;width:60px;}
+.fs-slider-products .item .item-desc{display:inline-block;vertical-align:top;width:185px;font-size:10pt;margin-left:5px;overflow: hidden;}
+.fs-slider-products .item .item-desc:after{content: "";display: inline-block;font-size: 0;}
+.fs-slider-products .item .item-price-block{font-size: 14pt;margin-top:10px;white-space: nowrap;}
+.fs-slider-products .item .fs-price-value{padding-right:5px;min-width: 80px;display: inline-block;}
+.fs-slider-products .owl-controls .owl-prev, 
+.fs-slider-products .owl-controls .owl-next{display:block!important;font-size:0!important;position:absolute!important;top:50px!important;width:26px!important;height:26px!important;margin-top:-13px!important;}
+.fs-slider-products .owl-controls .owl-prev{background:url(//img.fotosklad.ru/bitrix/templates/fs_mobile/images/left.jpg) no-repeat!important;left:10px!important;background-size:contain!important;}
+.fs-slider-products .owl-controls .owl-next{background:url(//img.fotosklad.ru/bitrix/templates/fs_mobile/images/right.jpg) no-repeat!important;right:10px!important;background-size:contain!important;}
+/* End */
+/* /bitrix/templates/fs_mobile/components/yeti/product.list/slider/style.css?14368691321321 */
