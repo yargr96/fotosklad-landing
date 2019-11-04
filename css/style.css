@@ -54,6 +54,8 @@
     text-align: center;
     margin-bottom: 19px;
     color: #000000;
+    z-index: 2;
+    position: relative;
 }
 
 .main__text {
@@ -62,6 +64,8 @@
     line-height: 175%;
     margin-bottom: 116px;
     color: #0E0D26;
+    z-index: 2;
+    position: relative;
 }
 
 .price-types {
@@ -361,8 +365,12 @@
 }
 
 .club-price-footer {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-template-columns: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
+    -ms-grid-gap: 16px;
+    -ms-grid-gap: 16px;
     grid-gap: 16px;
     height: 176px;
 }

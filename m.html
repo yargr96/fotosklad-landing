@@ -1,5 +1,4 @@
 <!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
-<!-- saved from url=(0023)https://m.fotosklad.ru/ -->
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru"
     class="popmechanic-desktop popmechanic-landscape popmechanic-loaded ">
 
@@ -60,6 +59,8 @@
         }
     </style>
     <link rel="stylesheet" href="./m-files/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/m.css">
     <script async="" defer="" charset="utf-8" src="./m-files/forms.js.Без названия"></script>
     <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore"
         src="./m-files/underscore.js.Без названия"></script>
@@ -87,7 +88,7 @@
                         id="input-key">
                 </span>
                 <span class="submit-wrap">
-                    <a href="javascript:void(0);" onclick="document.forms[&#39;top-search-form&#39;].submit();"
+                    <a href="javascript:void(0);" onclick="document.forms['top-search-form'].submit();"
                         class="button1">Найти</a>
                 </span>
             </form>
@@ -109,7 +110,181 @@
                 Корзина: (1) 42 580 р. </a>
         </span></div>
 
+    <div class="landing">
+        <section class="main">
+            <h2 class="main__header">Наши цены</h2>
+            <p class="main__text">
+                Мы решили вам немного расказать, по каким принципам <br>
+                формируется цена на товар и как купить дешевле
+            </p>
 
+            <div class="price-types">
+                <h3 class="price-types__header">Какие цены есть на сайте?</h3>
+                <div class="price-types__body">
+                    <div class="price-types__standard standard-prices">
+                        <div class="standard-prices__item price-card price-card_standard">
+                            <div class="price-card__header">Обычная цена</div>
+                            <p class="price-card__description">
+                                Фиксированная цена, соответствующая рыночной
+                            </p>
+                            <div class="price-card__footer">
+                                <span class="price-card__type">Обычная цена</span>
+                                <span class="price-card__price">6 789 р.</span>
+                            </div>
+                        </div>
+                        <div class="standard-prices__divider"></div>
+
+                        <div class="standard-prices__item price-card price-card_special">
+                            <div class="price-card__header">Специальная цена</div>
+                            <p class="price-card__description">
+                                Акционная цена товара, действующая для физических 
+                                лиц при оплате картой и наличными
+                            </p>
+                            <div class="price-card__footer">
+                                <span class="price-card__type">Специальная цена</span>
+                                <div class="price-card__question">?</div>
+                                <span class="price-card__price">6 789 р.</span>
+                                <div class="price-card__sale-label">-2%</div>
+                            </div>
+                        </div>
+                        <div class="standard-prices__divider"></div>
+                        
+                        <div class="standard-prices__item price-card price-card_base">
+                            <div class="price-card__header">Базовая цена</div>
+                            <p class="price-card__description">
+                                Цена действует при оплате заказа юридическими лицами, 
+                                при оформлении кредита, а также при оплате электронными деньгами
+                            </p>
+                            <div class="price-card__footer">
+                                <span class="price-card__type">Базовая цена</span>
+                                <div class="price-card__question">?</div>
+                                <span class="price-card__price price-card__price_special">6 789 р.</span>
+                                <div class="price-card__sale-label">-5%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="price-card price-types__club">
+                        <div class="price-card__header">Клубная цена</div>
+                        <p class="price-card__description">
+                            Премиальный вид цены для пользователей сайта Фотосклад.ру.
+                        </p>
+                        <a href="#club-price" class="price-card__details scroll-link">Подробнее</a>
+                        <div class="price-card__footer">
+                            <span class="price-card__type">Клубная цена</span>
+                            <div class="price-card__question">?</div>
+                            <span class="price-card__price price-card__price_special">6 789 р.</span>
+                            <div class="price-card__sale-label">-7%</div>
+                        </div>
+                    </div>
+
+                    <div class="price-card price-types__want-cheaper">
+                        <div class="price-card__header">Хочу дешевле</div>
+                        <p class="price-card__description">
+                            Суперцена с доставкой напрямую от поставщика
+                        </p>
+                        <a href="#want-cheaper" class="price-card__details scroll-link">Подробнее</a>
+                        <div class="price-card__footer">
+                            <span class="price-card__type">Хочу дешевле</span>
+                            <div class="price-card__question">?</div>
+                            <span class="price-card__price price-card__price_special">6 789 р.</span>
+                            <div class="price-card__sale-label">-9%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="club-price" class="club-price">
+            <div class="club-price__main">
+
+                <div class="club-price__info">
+                    <h2 class="club-price__header">Клубная цена</h2>
+                    <p class="club-price__text">
+                        Клубная цена - это премиальный вид цены <br>
+                        для пользователей сайта Фотосклад.ру.
+                    </p>
+                    <div class="club-price__conditions">Условия покупки товара <br> по клубной цене</div>
+                </div>
+
+                <div class="club-price__illustration">
+                    <div class="macbook">
+                        <div class="macbook__price-label">
+                            <div class="macbook__price-type">Клубная цена</div>
+                            <div class="macbook__question">?</div>
+                            <div class="macbook__price">4 990р.</div>
+                            <div class="macbook__sale-label">- 36%</div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="club-price__footer club-price-footer">
+                <div class="condition-card condition-card_payment club-price-footer__item">
+                    Оплата наличными или банковской картой.
+                </div>
+                <div class="condition-card condition-card_authirisation club-price-footer__item">
+                    На этапе потверждения заказа необходимо быть авторизованным на Фотосклад.ру.
+                </div>
+                <div class="condition-card condition-card_conditions club-price-footer__item">
+                    Сроки доставки, условия гарантии и возврата на товар такие же, как при покупке по стандартным ценам
+                </div>
+            </div>
+        </section>
+
+        <section id="want-cheaper" class="want-cheaper">
+            <div class="want-cheaper__main">
+                <div class="want-cheaper__info">
+                    <h2 class="want-cheaper__header">Цена “Хочу дешевле”</h2>
+                    <p class="want-cheaper__text">
+                        <span class="want-cheaper__why">За счет чего товар становится дешевле?</span>
+                        Если вы заказываете доставку напрямую от 
+                        поставщика или производителя, это позволяет нам 
+                        значительно снижать цену на товар. Ищите эти 
+                        товары со специальной пометкой «Хочу дешевле»
+                    </p>
+                    <p class="want-cheaper__conditions">
+                        Условия покупки товара по 
+                        принципу «Хочу дешевле»
+                    </p>
+                </div>
+                <div class="want-cheaper__illustration">
+                    <div class="macbook macbook_want-cheaper">
+                        <div class="macbook__price-label">
+                            <div class="macbook__price-type">Хочу дешевле</div>
+                            <div class="macbook__question">?</div>
+                            <div class="macbook__price">83 202р.</div>
+                            <div class="macbook__sale-label">- 24%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="want-cheaper-cards want-cheaper__cards">
+                <div class="condition-card condition-card_payment-card want-cheaper-cards__item">
+                    Оплата только банковской картой онлайн
+                </div>
+                <div class="condition-card condition-card_one-item want-cheaper-cards__item">
+                    В заказе может быть только 1 товар
+                </div>
+                <div class="condition-card condition-card_conditions want-cheaper-cards__item">
+                    Сроки доставки, условия гарантии и возврата на товар такие же, как при покупке по стандартным ценам
+                </div>
+                <div class="condition-card condition-card_delivery want-cheaper-cards__item">
+                    На этапе подтверждения заказа необходимо выбрать службу доставки с пометкой «Скидка на товар»
+                </div>
+            </div>
+
+            <div class="want-cheaper-toggle">Особенности отправки службой доставки Pony Express</div>
+            <div class="want-cheaper-toggle-body">
+                Заказы, отправленные службой доставки Pony Express, могут быть высланы из-за границы напрямую от поставщика или производителя товара. В этом случае курьерская служба вышлет Вам ссылку на портал для внесения данных паспорта и ИНН в сообщении на номер, указанный при оформлении заказа. <br><br>
+                В случае задержки в предоставлении паспортных данных и ИНН более чем на 3 дня, служба доставки возвращает товар на склад отгрузки. <br><br>
+                Обращаем внимание, что с 1 января 2019 месячный лимит для беспошлинной пересылки товаров из-за рубежа на одно физическое лицо составляет 500 евро или 31 кг. Если заказанный товар/товары суммарно превысят данный лимит, необходимо самостоятельно уплатить таможенные платежи и налоги, установленные законодательством РФ, о чем уведомит служба доставки.
+            </div>
+        </section>
+
+        <script src="./js/script.js"></script>
+    </div>   
 
     <div id="footer">
         <a href="https://m.fotosklad.ru/promo/">Акции</a>
