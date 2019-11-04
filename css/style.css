@@ -435,7 +435,7 @@
 
 .want-cheaper {
     background-color: #f05123;
-    padding: 0 21px;
+    padding: 0 21px 59px;
 }
 
 .want-cheaper__main {
@@ -460,7 +460,7 @@
     color: #FFFFFF;
     font-size: 16px;
     line-height: 175%;
-    margin-bottom: 61px;
+    margin-bottom: 46px;
     padding-right: 40px;
 }
 
@@ -488,6 +488,10 @@
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
+}
+
+.macbook_want-cheaper {
+    background-image: url(../img/macbook-want-cheaper.png);
 }
 
 .macbook__price-label {
@@ -553,6 +557,12 @@
     right: 93px;
 }
 
+.macbook_want-cheaper::before {
+    background-image: url(../img/price-on-screen-want-cheaper.png);
+    top: 149px;
+    right: 101px;
+}
+
 .macbook::after {
     content: "";
     position: absolute;
@@ -563,6 +573,11 @@
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-top-left-radius: 20px;
+}
+
+.macbook_want-cheaper::after {
+    top: 155px;
+    height: 101px;
 }
 
 .macbook__price-label > *:not(:last-child) {
@@ -578,4 +593,55 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 16px;
     height: 176px;
+}
+
+.want-cheaper__cards {
+    margin-bottom: 29px;
+}
+
+.want-cheaper-toggle {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 53px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-left: 33px;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+
+.want-cheaper-toggle::after {
+    content: '';
+    width: 11px;
+    height: 20px;
+    background-image: url(../img/icons/arrow-white.svg);
+    position: absolute;
+    right: 26px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: all .3s;
+}
+
+.want-cheaper-toggle.active::after {
+    transform: rotate(270deg);
+}
+
+.want-cheaper-toggle-body {
+    color: #FFFFFF;
+    line-height: 175%;
+    font-size: 16px;
+    padding-left: 33px;
+    padding-right: 40px;
+    padding-top: 32px;
+    display: none;
+}
+
+.want-cheaper-toggle-body.active {
+    display: block;
 }
