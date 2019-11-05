@@ -6,6 +6,7 @@
 .main {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 0;
     background-position: calc(100% + 103px) 106px;
     background-size: 700px;
 }
@@ -29,6 +30,7 @@
 .price-types {
     padding-left: 16px;
     padding-right: 16px;
+    margin-bottom: -10px;
 }
 
 .price-types__body {
@@ -41,6 +43,7 @@
     padding-left: 44px;
     padding-right: 44px;
     margin-bottom: 24px;
+    margin-right: 0;
 }
 
 .standard-prices__item {
@@ -50,7 +53,7 @@
 .standard-prices__divider {
     height: 1px;
     width: 100%;
-    margin: 28px 0;
+    margin: 17px 0;
 }
 
 .standard-prices::before {
@@ -63,15 +66,16 @@
 }
 
 .price-card {
-    padding-bottom: 87px;
+    padding-bottom: 84px;
 }
 
 .price-card::before {
-    top: 0;
+    top: 15px;
 }
 
 .price-card__header {
     font-size: 24px;
+    margin-bottom: 21px;
 }
 
 .price-card__description {
@@ -81,4 +85,42 @@
 
 .price-card__price {
     font-size: 14px;
+}
+
+.price-types__club {
+    margin-right: 0;
+    padding-left: 44px;
+    padding-right: 44px;
+}
+
+.price-types__club::before {
+    height: 301px;
+    top: 0;
+    left: 8px;
+    bottom: 0;
+    right: auto;
+    width: 12px;
+    margin: auto;
+    background-image: url(../img/lines-vertival.svg);
+    background-position: left top;
+}
+
+.price-types__club,
+.price-types__want-cheaper {
+    height: 344px;
+    margin-bottom: 24px;
+    padding-top: 68px;
+}
+
+.price-types__club .price-card__footer, 
+.price-types__want-cheaper .price-card__footer {
+    left: 44px;
+    right: 44px;
+    bottom: 47px;
+}
+
+.price-card__details {
+    font-size: 14px;
+    width: 80px;
+    bottom: 137px;
 }

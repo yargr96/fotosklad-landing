@@ -197,6 +197,8 @@
 .price-card__type {
     color: #8D8D8D;
     font-weight: normal;
+    flex-grow: 1;
+    text-align: left;
 }
 
 .price-card__price {
@@ -205,6 +207,7 @@
     white-space: nowrap;
     flex-grow: 1;
     text-align: right;
+    margin-right: 3px;
 }
 
 .price-card__price_special {
@@ -284,7 +287,8 @@
 
 .price-card__details:hover,
 .price-card__details:active,
-.price-card__details:visited {
+.price-card__details:visited,
+.price-card__details:link {
     color: #000000;
     text-decoration: none;
 }
