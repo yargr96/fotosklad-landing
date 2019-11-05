@@ -124,3 +124,26 @@
     width: 80px;
     bottom: 137px;
 }
+
+.club-price__main {
+    flex-direction: column;
+}
+
+.club-price__info {
+    padding: 0;
+    overflow: hidden;
+}
+
+.club-price__info::after {
+    left: 0;
+    bottom: 20px;
+    top: auto;
+    margin: auto;
+    transform: rotate(90deg);
+}
+
+.macbook-rendered {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
