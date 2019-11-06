@@ -107,9 +107,9 @@
 
 .price-types__club,
 .price-types__want-cheaper {
-    height: 344px;
+    height: 360px;
     margin-bottom: 24px;
-    padding-top: 68px;
+    padding-top: 82px;
 }
 
 .price-types__club .price-card__footer, 
@@ -119,14 +119,26 @@
     bottom: 47px;
 }
 
+.price-types__want-cheaper {
+    background-position: center 50px;
+}
+
 .price-card__details {
     font-size: 14px;
     width: 80px;
     bottom: 137px;
 }
 
+.club-price {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 48px;
+    background-position-y: 101%;
+}
+
 .club-price__main {
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .club-price__info {
@@ -143,7 +155,96 @@
 }
 
 .macbook-rendered {
-    max-width: 100%;
     display: block;
     margin: auto;
+}
+
+.club-price__header,
+.club-price__text,
+.club-price__conditions,
+.club-price-footer,
+.want-cheaper__conditions,
+.want-cheaper__cards {
+    padding: 0 16px;
+}
+
+.club-price__conditions {
+    margin-bottom: 23px;
+}
+
+.illustration {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.club-price-footer {
+    grid-template-rows: repeat(3, 168px);
+    grid-template-columns: 1fr;
+    height: auto;
+    grid-gap: 24px;
+}
+
+.condition-card {
+    font-size: 14px;
+    padding-right: 35px;
+}
+
+.want-cheaper {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 72px;
+}
+
+.want-cheaper__main {
+    display: block;
+    padding: 0;
+}
+
+.want-cheaper__header {
+    margin-top: 0;
+    margin-bottom: 38px;
+}
+
+.want-cheaper__text {
+    font-size: 14px;
+    line-height: 175%;
+}
+
+.want-cheaper__info {
+    padding-bottom: 13px;
+    margin-bottom: 40px;
+}
+
+.want-cheaper__info::after {
+    left: 0;
+    bottom: 0;
+    top: auto;
+    margin: auto;
+    transform: rotate(90deg);
+}
+
+.want-cheaper__cards {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 168px);
+    grid-gap: 24px;
+}
+
+.want-cheaper-toggle {
+    max-width: calc(100% - 32px);
+    margin: auto;
+    padding-right: 50px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+.want-cheaper-toggle-body {
+    font-size: 14px;
+    line-height: 175%;
+    padding-left: 42px;
+    padding-right: 60px;
 }

@@ -598,6 +598,7 @@
 
 .want-cheaper__why {
     color: #FDC52D;
+    display: block;
 }
 
 .want-cheaper-cards {
